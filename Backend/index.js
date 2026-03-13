@@ -16,7 +16,7 @@ const app = express();
 
 app.use(helmet());
 app.use(cors({
-     origin: process.env.CLIENT_URL, 
+    origin: "https://aiinterviewprep-theta.vercel.app",
     credentials: true
 }));
 app.use(express.json());
