@@ -5,15 +5,16 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"},
+    "dev": "nodemon index.js",
+    "seed": "node src/seed/seeder.js",
+    "seed:fresh": "node src/seed/seeder.js --fresh"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "@upstash/ratelimit": "^2.0.8",
-    "@upstash/redis": "^1.36.3",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
@@ -24,7 +25,8 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.4",
     "multer": "^2.1.1",
-    "swagger": "^0.7.5",
+    "rate-limiter-flexible": "^11.2.0",
+    "redis": "^6.1.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
