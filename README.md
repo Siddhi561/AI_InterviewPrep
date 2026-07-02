@@ -15,7 +15,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 - Secure cookie-based authentication
 - Modular backend architecture
 - Image upload support
-- Swagger API documentation
+
 ---
 
 
