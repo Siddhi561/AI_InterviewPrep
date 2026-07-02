@@ -22,7 +22,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🏗️ System Architecture
 
 <p align="center">
-  <img src="docs/images/system_architecture.png" alt="System Architecture" width="950">
+  <img src="docs/images/system_architecture.png" alt="System Architecture" width="50%">
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 
 
 <p align="center">
-  <img src="docs/images/login.png" alt="Login Page" width="800">
+  <img src="docs/images/login.png" alt="Login Page" width="30%">
 </p>
 
 <p align="center">
@@ -47,7 +47,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 📝 Register
 
 <p align="center">
-  <img src="docs/images/register.png" alt="Register Page" width="800">
+  <img src="docs/images/register.png" alt="Register Page" width="30%">
 </p>
 
 <p align="center">
@@ -58,7 +58,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🏠 Dashboard
 
 <p align="center">
-  <img src="docs/images/dashboard.png" alt="Dashboard" width="820">
+  <img src="docs/images/dashboard.png" alt="Dashboard" width="60%">
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## ✨ Create Interview Session
 
 <p align="center">
-  <img src="docs/images/session_create.png" alt="Create Interview Session" width="800">
+  <img src="docs/images/session_create.png" alt="Create Interview Session" width="30%">
 </p>
 
 <p align="center">
@@ -81,7 +81,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🤖 Interview Session
 
 <p align="center">
-  <img src="docs/images/session.png" alt="Interview Session" width="820">
+  <img src="docs/images/session.png" alt="Interview Session" width="30%">
 </p>
 
 <p align="center">
@@ -92,7 +92,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 👤 User Menu
 
 <p align="center">
-  <img src="docs/images/user_option.png" alt="User Menu" width="650">
+  <img src="docs/images/user_option.png" alt="User Menu" width="30%">
 </p>
 
 <p align="center">
@@ -103,7 +103,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🖼️ Profile Management
 
 <p align="center">
-  <img src="docs/images/profile_update.png" alt="Profile Update" width="700">
+  <img src="docs/images/profile_update.png" alt="Profile Update" width="60%">
 </p>
 
 <p align="center">
@@ -125,7 +125,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🔐 Authentication Flow
 
 <p align="center">
-  <img src="docs/images/Auth Flow.png" alt="Authentication Flow" width="700">
+  <img src="docs/images/Auth Flow.png" alt="Authentication Flow" width="60%">
 </p>
 
 <p align="center">
@@ -136,7 +136,7 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 ## 🛡️ Secure API Request Handling
 
 <p align="center">
-  <img src="docs/images/Secure API Request Handling.png" alt="Security Middleware Pipeline" width="700">
+  <img src="docs/images/Secure API Request Handling.png" alt="Security Middleware Pipeline" width="40%">
 </p>
 
 <p align="center">
