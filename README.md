@@ -207,6 +207,7 @@ AI_Interview/
 
 ### Prerequisites
 - Node.js v18+
+- Docker Desktop (for Redis)
 - MongoDB (local or Atlas)
 - Google Gemini API key
 - ImageKit account
@@ -384,28 +385,87 @@ Password: Test@1234
 
 ---
 
-## 🌐 Deployment
+## 💻 Local Development
 
-### Backend — Railway / Render
-1. Push backend to GitHub
-2. Connect repo to Railway or Render
-3. Add all `.env` variables in the dashboard
-4. Set `NODE_ENV=production`
-5. Update cookie: `secure: true`, `sameSite: 'none'`
+This project is configured for local development using Docker for Redis and either a local MongoDB instance or MongoDB Atlas.
 
-### Frontend — Vercel
-1. Push frontend to GitHub
-2. Connect repo to Vercel
-3. Add environment variable:
-```
-VITE_API_URL=https://your-backend-url.com/api/v1
-```
-4. Update `.js`:
-```javascript
-baseURL: import.meta.env.VITE_API_URL
+### Services
+
+| Service     | Default URL                       |
+| ----------- | --------------------------------- |
+| Frontend    | `http://localhost:5173`           |
+| Backend API | `http://localhost:3000`           |
+| MongoDB     | Local or MongoDB Atlas            |
+| Redis       | `redis://localhost:6379` (Docker) |
+
+### Running Redis with Docker
+
+Start a local Redis container:
+
+```bash
+docker run -d \
+  --name redis \
+  -p 6379:6379 \
+  redis:7-alpine
 ```
 
----
+Verify that Redis is running:
+
+```bash
+docker ps
+```
+
+### Start the Backend
+
+```bash
+cd Backend
+npm install
+npm run dev
+```
+
+The backend will be available at:
+
+```text
+http://localhost:3000
+```
+
+### Start the Frontend
+
+```bash
+cd Frontend
+npm install
+npm run dev
+```
+
+The frontend will be available at:
+
+```text
+http://localhost:5173
+```
+
+### Local Environment
+
+Example backend environment variables:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+SECRET_KEY=your_jwt_secret_key
+GEN_AI=your_gemini_api_key
+
+IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
+
+REDIS_URL=redis://localhost:6379
+
+CLIENT_URL=http://localhost:5173
+
+NODE_ENV=development
+PORT=3000
+```
+
+> **Note:** This project is configured for local development. Redis runs in a Docker container on `localhost:6379`. If you deploy the application in the future, replace the local Redis instance with a hosted Redis service and update the environment variables accordingly.
+
 
 ## 🚀 Future Improvements
 
