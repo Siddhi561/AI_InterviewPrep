@@ -180,25 +180,40 @@ A full-stack AI-powered interview preparation app that helps you practice mock i
 AI_Interview/
 ├── Backend/
 │   ├── src/
-│   │   ├── config/          # DB, ImageKit, rate limiter
-│   │   ├── controllers/     # user, session, question
-│   │   ├── middlewares/     # auth, error handler, validation, rate limit
-│   │   ├── models/          # User, Session, Question
-│   │   ├── routes/          # user, session, question routes
-│   │   ├── utils/           # AppError, asyncHandler, apiResponse
-│   │   └── validators/      # Zod schemas
-│   ├── index.js
-│   └── package.json
+│   │   ├── config/              # Database, ImageKit, Redis, environment
+│   │   ├── controllers/         # User, session, interview controllers
+│   │   ├── middlewares/         # Auth, error handler, validation, rate limiter
+│   │   ├── models/              # Mongoose models
+│   │   ├── routes/              # API routes
+│   │   ├── services/            # Business logic
+│   │   ├── utils/               # AppError, asyncHandler, API response helpers
+│   │   ├── validators/          # Zod validation schemas
+│   │   └── app.js               # Express app configuration
+│   ├── .env.example
+│   ├── package.json
+│   └── package-lock.json
 │
-└── Frontend/
-    ├── src/
-    │   ├── Pages/           # Login, Register, MainPage, Session, SessionDetails
-    │   ├── Routes/          # MainRoutes, ProtecRoutes
-    │   ├── Store/           # Redux store + user reducer
-    │   ├── utils/           # axiosInstance, components
-    │   ├── App.jsx
-    │   └── main.jsx
-    └── package.json
+├── Frontend/
+│   ├── src/
+│   │   ├── Pages/               # Login, Register, Dashboard, Interview, Results
+│   │   ├── Routes/              # Protected & public routes
+│   │   ├── Store/               # Redux Toolkit store
+│   │   ├── Components/          # Reusable UI components
+│   │   ├── utils/               # Axios instance, helpers
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   ├── package.json
+│   └── package-lock.json
+│
+├── docs/
+│   ├── images/                  # README banners, screenshots, diagrams   
+│   └── postman/
+│       └── AI_Interview_API.postman_collection.json
+│
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -215,8 +230,8 @@ AI_Interview/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-interview-prep.git
-cd ai-interview-prep
+git clone https://github.com/Siddhi561/AI_InterviewPrep.git
+cd AI_InterviewPrep
 ```
 
 ### 2. Backend Setup
